@@ -1,0 +1,24 @@
+
+<!-- line
+bar
+radar
+doughnut and pie
+polar area
+bubble
+scatter -->
+
+<select class="form-select" [(ngModel)]="charType" (change)="chart()" aria-label="Default select example">
+
+    <option selected value="bar">bar</option>
+    <option value="pie">pie</option>
+    <option value="polarArea">polarArea</option>
+</select>
+
+<div class="card text-dark text-center ">
+    <div class="card-header">Compalaint card</div>
+    <div class="card-body">
+      <div id="myDiv">
+        <canvas #myChart ></canvas>
+    </div>
+    </div>
+  </div>
